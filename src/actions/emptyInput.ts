@@ -1,6 +1,6 @@
 import { AsyncActionCreator } from '../types';
 
-type DemoInput = undefined;
+type DemoInput = void;
 
 type DemoAction = { y: string };
 

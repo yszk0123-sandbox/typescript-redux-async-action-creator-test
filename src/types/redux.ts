@@ -14,11 +14,11 @@ export type AsyncAction<State, Action, Return = AnyPromise> = (
   getState: () => State
 ) => Return;
 
-export type SyncActionCreator<Input, Action> = Input extends undefined
+export type SyncActionCreator<Input, Action> = Input extends void
   ? () => Action
   : (input: Input) => Action;
 
-export type AsyncActionCreator<Input, Action> = Input extends undefined
+export type AsyncActionCreator<Input, Action> = Input extends void
   ? () => AsyncAction<RootState, Action, Promise<any>>
   : (input: Input) => AsyncAction<RootState, Action, Promise<any>>;
 
