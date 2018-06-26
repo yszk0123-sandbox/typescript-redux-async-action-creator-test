@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "typescript-redux-async-action-creator-test",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Yuji Suzuki <y0suzuki0123@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {}
+}

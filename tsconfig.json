@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["esnext", "dom"],
+    "sourceMap": true,
+    "jsx": "react",
+    "allowJs": false,
+    "declaration": true,
+    "strict": true
+  },
+  "include": ["custom.d.ts", "src"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ]
+}
